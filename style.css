@@ -1,0 +1,147 @@
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: none; 
+  border-radius: 5px; 
+  overflow: hidden; 
+  
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 150px; 
+  text-align: center; 
+  background-color: #e0e0e0; 
+  border-right: 1px solid #ccc; 
+  color: #000; 
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+.tab.active {
+  background-color: #000;
+  color: #fff;
+}
+.tab .tab-icon {
+  display: none; 
+  margin-right: 5px; 
+}
+
+.tab.active .tab-icon {
+  display: inline-block;
+}
+
+.products {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products.active {
+  display: flex;
+}
+
+.product-card {
+  padding: 20px;
+  margin: 10px;
+  width: 220px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.image-container .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(251, 251, 251);
+  padding: 5px;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-vendor {
+  display: flex;
+  align-items: center; 
+}
+
+.title-vendor h3 {
+  margin: 0; 
+  margin-right: 10px; 
+  white-space: nowrap; 
+}
+
+.title-vendor p {
+  display: flex;
+  align-items: center; 
+  margin: 0;
+  color: #4d4949; 
+}
+
+.vendor-dot {
+  width: 8px; 
+  height: 8px; 
+  background-color: black; 
+  border-radius: 50%; 
+  margin-right: 5px; 
+}
+
+.product-info .price {
+  font-weight: bold;
+}
+
+.product-info .compare-at-price {
+  text-decoration: line-through;
+  color: rgb(88, 83, 83);
+}
+
+.product-info .discount {
+  color: rgb(231, 0, 0);
+  font-weight: bold;
+}
+
+.add-to-cart {
+  display: inline-block;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+}

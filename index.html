@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SELECT YOUR CHOICE</h1>
+        <div class="tabs">
+            <div class="tab" id="tab-men" onclick="switchTab('men')">
+                <span class="tab-icon">&#x1F454;</span> 
+                Men
+            </div>
+            <div class="tab" id="tab-women" onclick="switchTab('women')">
+                <span class="tab-icon">👗</span> 
+                Women
+            </div>
+            <div class="tab" id="tab-kids" onclick="switchTab('kids')">
+                <span class="tab-icon">&#x1F466;</span> 
+                Kids
+            </div>
+        </div>
+        
+        <div id="men" class="products"></div>
+        <div id="women" class="products"></div>
+        <div id="kids" class="products"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
